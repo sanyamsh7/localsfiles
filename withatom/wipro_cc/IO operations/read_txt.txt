@@ -1,0 +1,3 @@
+This is a text file for read_txt.py file.
+My name is Sanyam Sharma.
+WIPRO-STREAM-PYTHON-BATCH-03

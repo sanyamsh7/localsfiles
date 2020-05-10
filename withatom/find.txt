@@ -1,0 +1,55 @@
+ex6 Things To Do:
+General format:
+-->   find . -name *.txt -print
+   (the above command finds the file of type .txt in the current directory and
+    prints those file on the terminal.)
+1. figure out what is find command of shell(done)
+2. what are the flags used in find command(done)
+    (i am only implementing -name, - type, -exec, -print, -. (dot))
+3. create a py file for this exercise(done)
+4. A flag -name or -type flag(-type d means to find directories with given name
+    or -type f means type file like powershell.)(done)
+  which contains the name of the file to search for.(done)
+5. A flag -print to print the contents of the file.(done)
+6. A directory to start searching in like ( . >> dot searches in the current(done)
+        directory or if a path is given then it searches in the that directory.)
+7. A flag -exec to execute useful things like if we want to delete a file then
+-->   find . -name *.rb -exec rm {} \; ( this deletes the files of type ruby.)(remaining)
+8. how to delete a file in python(done)
+9. create a directory with some empty files in it to work on.(done)
+10. Look for subprocess module and glob module late on after implementing this
+    with argparse module.(remaining)
+11. how to find files using python(done      
+12. What is nargs = "+" in argparse?
+    (this is used to give n number of arguments to a command it returns a list
+     of all the arguments.)
+13. What is metavar?
+    (it provides different name for the optional argument, similarly --> dest)
+14. Also look at the os module if that helps but after 45 min.
+    (currently no using the os module. now trying to use other modules like:
+      glob and pathlib)
+
+15. how to delete a file in python(done)
+  use .. os.remove(filename or path)
+16. Understand the glob module and try to use it.(done)
+17. Understand Path method from pathlib module.(done)
+18. What are the other path manipulation libraries?(done)
+k    (os.path , pathlib, shutil, glob, os)
+19. Make a function only for all the arguments.(done)
+
+20. Make a function find(arg) with arg as parse_args() this function will contain
+    all the decision making of the arguments.(done)
+21. Make a function for finding file with name(done)
+22. Make a function for type of file(done)
+--------------------------------------------------------------------------------
+for find2.py-------
+1. Refactor the entire code of find.py and re-implement the better version of it.
+2. Implement the -exec flag along with others
+3. Use command with exec like delete and count(to count the number of files.).
+4. Try implementing the search for the directories.
+5. Figure out what are is_file() and is_dir() methods, use them.
+6. Use another another logic to join paths rather than using joinpath().
+7. Implement a path argument which takes the path of the directory to search
+     for the file specified.
+8. glob module only searches for files and directories in current location
+  try not using that.

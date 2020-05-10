@@ -1,0 +1,22 @@
+Things To Do:
+implementing cut tool of unix.
+1. Read about the working of cut tool.(done)
+    syntax: cut [options] [file]
+2. Add arguments for file name input and simply print the file content.(done)
+3. Add an argument for fixed width (-c)(done)
+    example: cut -c 5-10 file1
+    this will extract the characters 5 to 10 from each line.
+4. Add an argument for delimiter -d. This will extract the second and sixth field from
+    each line, using the ";" character as the delimiter(by default it is tab)(done)
+    example: cut file1.txt -d "," -f 2,6
+    -d --> for delimiter and -f --> lets you choose the fields you wanna display.
+5. Use webcam this time to analyse how you work and also try to use screen recorder
+  if that helps.(done)
+6. Now set strict time limit of 45 min and see how much of the tool you can implemen.(done)
+7. Whats the impact of unicode on my implementation.
+8. Print the number of words given to -c flag.(done)
+
+BUGS:
+  Indexing of the words printed ont he terminal is from zero.
+  If the lines in the text file are shorter then the upper limit given to -c flag
+  then it prints the spaces after the line ends.

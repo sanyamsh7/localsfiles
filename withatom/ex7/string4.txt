@@ -1,0 +1,3 @@
+this is file 4 of directory ex7 for testing purpose.
+NOW MORE CAPITAL LETERS THESE ARE TO DETECT CAPITALS.
+ALPHANUMERIC : alphanumeric 123123sharma

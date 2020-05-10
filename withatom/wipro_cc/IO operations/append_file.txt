@@ -1,0 +1,5 @@
+line1: This is the file to read.
+line2: I am coding using Python language.
+line3: My PJP STREAM is PYTHON.
+line4: COMPANY NAME: WIPRO
+my name is sanyam sharma

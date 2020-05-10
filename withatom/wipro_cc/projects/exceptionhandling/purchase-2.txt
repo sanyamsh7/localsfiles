@@ -1,0 +1,11 @@
+Chocolate 50
+Biscuit 35
+Icecream 50
+Rice 100
+Chicken 250
+
+Perfume Free
+Soup Free
+
+Discount 80
+discount 7

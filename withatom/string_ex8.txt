@@ -1,0 +1,4 @@
+This is string file to carve for cut tool implementation.
+This is the second line.
+This is the third line just writing random numbers123123.
+This,is,the, fourth, line ,with, commas, , , ,gsfg, trrbg.

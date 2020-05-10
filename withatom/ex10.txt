@@ -1,0 +1,29 @@
+Things To Do:
+1. study about the sort command.
+    *) sort command sorts the content of a file line by line.
+    *) it supports sorting alphabetically or in revers order or by number or by
+      month or can also remove duplicates.(done)
+    *) sorting is done based on one or more sort keys extracted from each line
+      of input.
+    *) by default, the entire input is taken as sort key. Blank space is the
+      default field separator.
+    *) lines starting with a number will appear before lines starting with a letter.(done)
+    *) lines starting with a letter that appears earlier in the aplphabet will
+      appear before lines starting with a letter that appears later in the alphabet.(done)
+    *) lines starting with a lowercase letter will appear before lines starting
+      with the same letter in uppercase.
+    ---> OPTIONS....
+          -O OPTION: IF YOU WANT TO WRITE THE SORTED OUTPUT TO A NEW FILE. THIS ALLOWS US
+                     TO SPECIFY AN OUTPUT FILE.(DONE)
+                     EXAMPLE: sort -o output.txt input.txt
+          -r OPTION: SORTING IN REVERSE ORDER.(done)
+                     EXAMPLE: sort -r inputfile.txt
+          -f OPITON: TO SORT BY IGNORE CASE.(DONE)
+          -g OPTION: TO SORT BY THE NUMERICAL DATA.(done)
+2. Implement all the above in 45 min (ALSO THERE ARE OTHER OPTIONAL ARGUMENTS TOO.)
+3. Create a text file with content in random order.
+4. Read the file.(done)
+5. Try sorting the text by using sorted and sort and see the difference in both.
+    (don't use sort as a sorted object is required for data manipulation)
+6. Sort a file based on lowercase letters only.(done)
+7. Sort a file based on both uppercase and lowercase letters.(done)

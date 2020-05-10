@@ -1,0 +1,9 @@
+Things To Do:
+1. connect pi
+2. arduino interfacing with pi 
+3. find out how to send signals to arduino with pi(using serial usb of arduino)
+4. send some random text to arduino 
+5. observe the out put on seriial monitor
+6. create a movement.py module for car
+7. check module mobility
+8. send commands from pi to arduino and turn the wheels

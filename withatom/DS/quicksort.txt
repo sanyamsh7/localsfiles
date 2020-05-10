@@ -1,0 +1,63 @@
+QUICK SORT IS A DIVIDE AND CONQUER ALGORITHM
+
+IT FIRST DIVIDES THE INPUT ARRAY INTO TWO SMALLER SUB-ARRAYS THE
+LOW ELEMENTS AND THE HIGH ELEMENTS. IT THEN RECURSIVELY SORTS THE
+SUB-ARRAYS.
+
+STEP FOR THE ALGORITHM:
+
+1. pick the pivot element.
+2. partitioning: reorder the array so that elements lower than the
+    pivot are the lower element and elements above pivot are higher
+    elements. (equal elements can go either way.)
+    after this partitioning operation the pivot element is in its
+    final position.
+3. RECURSIVELY:  recursively apply the above steps to the sub-ARRAYS
+    of elements of smaller value and sub arrays of elements with higher
+    values.
+
+BASECASE: ARRAYS WITH ZERO ELEMENT AND ONE ELEMENT ARE ALWAYS SORTED BY
+          DEFINITION.
+
+LOMUTO PARTITION SCHEME:
+
+1. CHOSES A PIVOT THAT IS TYPICALLY THE LAST ELEMENT IN THE ARRAY.
+2. ALGORITHM MAINTAINS INDEX i AS IT SCANS THE ARRAY USING ANOTHER INDEX J
+    SUCH THAT THE ELEMENTS AT lo THROUGH I-1 ARE LESS THAN THE PIVOT AND THE
+    ELEMENTS AT I THROUGH J ARE EQUAL TO OR GREATER THAN THE PIVOT.
+3. THIS SCHEME IS JUST FOR INTRODUCTORY UNDERSTANDING AND IS EASY TO IMPLEMENT
+    ALTHOUGH IT IS LESS EFFICIENT.
+4. THIS SCHEME DEGRADES TO O(N2) WHEN AN ALREADY SORTED ARRAY IS GIVEN
+
+
+...../PSEUDO- CODE FOR QUICK SORT\......
+
+ALGORITHM quicksort(A, lo, hi) is
+    if lo < hi then
+        p = partition(A, lo, hi)
+        quicksort(A, lo, p -1)
+        quicksort(A, p + 1, hi)
+
+ALGIRITHM partition(A, lo, hi) is
+    pivot = A[hi]
+    i = lo
+    for j = lo to hi do
+        if A[j] < pivot then
+            swap A[i] with A[j]
+            i = i + 1
+    swap A[i] with A[hi]
+    return i
+
+***SORTING THE ENTIRE ARRAY IS ACCOMPLISHED BY quicksort(A, 0, len(A) - 1)
+
+....../PSEUDO- CODE FOR DOUBLE LINKED LIST SORTING\......
+
+FUNCTION scanner(count, node ) is
+      i = 0
+      while i< count:
+          node = node.next
+      return node
+
+FUNCTION quick(link list of numbers, first element, last element) do
+      low = scan to the low element (nodes to count, start node)
+      high = scan to the high element (nodes to count, start node)

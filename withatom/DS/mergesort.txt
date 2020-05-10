@@ -1,0 +1,103 @@
+def merge_sort(list m)
+    if length of m <= 1 then
+      return m
+    var left := empty list
+    var right := empty list
+    for each x with index i in m do
+      if i<(length of m)/2 then
+        add x to left
+      else
+        add x to right
+    left := merge_sort(left)
+    right := merge_sort(right)
+
+    return merge(left, right)
+
+def merge(left, right)
+    var result := empty list
+    while left is not empty and right is not empty do
+        if first(left) <= first(right) then
+            append first(left) to result
+            left := rest(left)
+        else
+            append first(right) to result
+            right := rest(right)
+
+    while left is not empty do
+        append first(left) to result
+        left := rest(left)
+    while right is not empty do
+        append first(right) to result
+        right := rest(right)
+    return result
+
+
+/////pseudocode for linked list mergesort
+function merge_sort(numbers):
+    if type(numbers) is DoubleLinkedList:
+        node = numbers.head
+    else:
+        node = numbers
+    left = None
+    right = None
+
+    #create sublists
+    left, right = sublists(left, right, node)
+    left = merge_sort(left)
+    right = merge_sort(right)
+
+    #return the merged list
+    return merge(left, right)
+
+function list_length(node):
+    count = 0
+    while node != None:
+        count += 1
+        node = node.next
+    return count
+
+function sublists(left, right, node):
+    i = 0
+    left_end = None
+
+    #create left sublist first
+
+    while i< list_length(node):
+        if left == None:
+          left = node
+          left_end = node
+        else:
+          left_end.next = node
+          left_end = node
+        i += 1
+
+    right = left_end.next
+    left_end.next = None
+    right.prev = None
+
+    #return the heads of sublists created
+    return (left,right)
+
+function first(node):
+    return data of node
+
+function rest(node):
+    return next node of node
+
+function merge(left, right):
+    result is None
+    #loop through the elements of left and right
+    while left is not empty and right is not empty:
+        if first of left is smaller than first of right:
+            add first of left to result
+            left = rest(right)
+        else:
+            add first of right to result
+            right = rest(right)
+    while left is not empty:
+        add first of left to result
+        left = rest(left)
+    while right is not empty:
+        add first of right to result
+        right = rest(right)
+    return result

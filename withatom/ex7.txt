@@ -1,0 +1,69 @@
+Things To Do:
+1. study regex:(done)
+
+    ^ --> anchor beginning, means this will only match if match is at the
+          beginning of the string.
+    $ --> anchor end, means this will only match of match is at the end
+          of the string.
+    . --> any one char, means accepts any single character input.
+    ? --> optional previous, means previous part of this regex is optional.
+          example--> A? means char A is optional.
+    * --> 0 or more previous any number of times. Take the previous part of the
+          regex and accept it repeatedly or skip it. Either it is A* means
+          it will accept AAAAA or any string like BSJDFOT because it has no A
+          char.
+    + --> 1 or more previous atleast once. Same as above regex but it only
+          accepts if the regex has 1 or more of those characters.
+          example: A+ will accept AAAAA or but not BFJGVLKDJ it will also accept
+            AFSDJFKS because it has one A char.
+[X-Y] --> accepts characters ranging from any X to any Y.
+   () --> capture, means it captures this part for later use.
+           EXAMPLE: ([A-Z]+) this means it will capture one or more capital letters.
+2. Learn about all the arguments of grep command.
+    command format: grep string/regex filepath
+              -i flag is used to search only the string input as it is.
+              -w to avoid matching all the substrings
+
+3. Implement the task using the previous method of nested functions.(dONE)
+4. read the contents of a file.(done)
+5. Choose a regex to search for in the file.(done)
+6. Learn about all the methods of the regex module(done)
+    re.search(string/regex, file/string) --> searches for the first occurrence
+                                            of the input(no match returns None)
+    re.findall('string/regex', file/text) --> list of matched strings/substrings
+                                              list contains matches in order found.
+                                              if no match then empty list
+    re.finditer(same, same) --> returns an iterator of matched object.
+    re.split(string/regex, file/text, maxsplit/optional) --> returns a list where
+                                                             the string had been split
+                                                             at each match.
+    re.sub(string/regex, replace_string, file/text, count/optional) --> replaces the match with
+                                                        replace_string(count=number of replacement)
+    re.compile(regex/string) --> this allows to compile the regex into object
+
+7. Try more examples of regex for better understanding(done)
+8. Try w3school exercise for practicing regex.(done)
+9. Create necessary flags for the grep command(done)
+10. Try using pathlib for handling all the paths in task(not required for now)
+11. import this module in find2.py to use it in that scipt.
+12. Develop better script by combining both the scripts.
+13. What is a match object?
+    (A match object is an object containing the information about the search and
+    the result.)(for no match it returns None)
+14. What are the methods and properties of the match object?
+    (.span() tuple containing the start and end position of match)
+    (.string returns the string passed in the function)
+    (.group() returns the part of the string where there was match.)
+15. Make a function for all the command arguments.(done)
+16. Make a function named(grep())(done)
+17. Initially making this script to work in the current directory(done)
+18. import glob from glob module to search for all the files in current directory(done)
+19. You have to print the line where the pattern is found.(done)
+20. Test the script by input of path(((cant do this right now as the program is already looking
+    in the current folder))) , type of files, filename.(DONE BUT PATH FUNCTIONALITY IS REMAINS)
+21. Also show the line number.(done)
+
+NOTE: ALSO THERE IS NO NEED OF FOR FLAG -i BECAUSE THE GREP USING REGEX IS ALREADY
+      CASE SENSITIVE.
+NOTE: WHEN THERE IS NO MATCH THEN NONE VALUE IS RETURNS WHICH THROWS AN
+      ATTRIBUTE ERROR WHEN WE USE ANY MATCH METHODS WITH IT.

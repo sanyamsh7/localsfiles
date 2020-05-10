@@ -1,0 +1,97 @@
+\.....documentation of dictionary datatype created using doble linkedlist...../
+
+class Dictionary():
+      function __init__ with number of buckets:
+          class instance = DoubleLinkedList
+
+          loop to initialize a map upto given number of buckets
+                push(DoubleLinkedList at each node) in DoubleLinkedList instance
+
+      function hash_key( key ):
+          # hash(key) creates hash of given key
+          # look dict_study_code.py file
+          # hash() creates a hash value for the input given
+          hash_value = hash(key)
+
+          # count the number of buckets
+          count = self.map.count()
+
+          #created index for the given key
+          # this will a random smaller(than hash value) number to the bucket
+          index = hash_value % count
+
+          return index
+
+      function get_bucket( key ):
+          # finds the bucket where the key would go
+          hash_key( key ) will give the bucket id
+
+          # normally instance.get() returns the data in the node
+          # but here because of line 8 we have a double linkedlist node at
+          # data position of each node
+          # so here node is returned instead of just data of node
+
+          node = self.map.get(bucket_id)
+          return node
+
+      function get_slot( key , default = None):
+          # returns either the bucket and node for slot or bucket and None
+          # return the bucket where the given key is
+          bucket = self.get_bucket(key)
+
+          if bucket:
+              node = bucket.head #head of this node
+              i = 0
+              while node:
+                  # if the key is similar to the key in bucket
+                  if key == node.data[0]
+                  # then reutrn that node along with the bucket
+
+                  #else move forward to check the next node
+                  else:
+                      node = node.next
+          # above while will return the next node if , if statement
+          # doesnot work , if it is not true then return the bucket along with None
+
+          return bucket, None
+          # here returnin bucket, node.. will also work as node will have the next
+          # value which will have None
+
+      function set( key, default = None):
+          bucket and node will get slot from the get_slot( key )
+
+          # if slot is not none then put data (key, value) pair in slot
+          if slot:
+              slot.data = (key, data)
+
+          else:
+              # if slot does not exists then append to create one
+              bucket.push((key, data))
+
+      function get( key , default = None):
+          # get the bucket and node from get_slot( key , default = default)
+          bucket, node = self.get_slot(key , default = default)
+
+          # return the node or data(value) in the node
+          return node and node.data[1] or node
+
+      function default( key ):
+      # deletes the given key from the map
+      bucket = self.get_bucket(key)
+      node = bucket.head
+
+      while node:
+          k, v = node.data # gives (key , data)
+          if key == K:
+            bucket.remove(node.data) # removes the data in the node(key, data)
+            break
+
+      function list():
+        # prints in the entire map
+        bucket_node = self.map.head # starts from the head of the map
+        while bucket_node:
+            slot_node = bucket_node.data.head
+            while slot_node:
+                print(slot_node.data)
+                slot_node = slot_node.next
+            bucket_node = bucket_node.next

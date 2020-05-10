@@ -1,0 +1,20 @@
+Things To Do:
+syntax : uniq [options] filename.txt(sorted)
+
+1. What is uniq command in unix?
+    It is a command line utility for reporting or filtering repeated lines in a file.
+    It can remove duplicates, show a count of occurrences, show only repeated lines,
+    ignore certain characters and compare on specific fields.
+    (The command expects adjacent comparison lines so it is often combined with the sort command.)
+    ( THE FILE WHICH DOESNOT HAVE ADJACENT OCCURRENCES OF THE LINES NEED TO SORTED BEFORE PASSING
+    TO THE UNIQ COMMAND)
+    ---> UNIQ COMMAND RETURNS THE UNIQUE OCCURRENCES OF THE LINES AND PRINTS THE OUTPUT ON STANDARD OUTPUT.
+    ---> PASSING A FILE TO UNIQ WHICH IS NOT SORTED WILL SIMPLY PRINT THE CONTENTS OF THE FILE.
+    ---> IT CAN ALSO OUTPUT THE NUMBER OF TIMES A LINE OCCURS IN A FILE.
+    ---> IT CAN ALSO SHOW ONLY THE REPEATED LINES.
+    ---> IT CAN ALSO SHOW LINES WHICH ARE NOT REPEATED.
+    ---> IT CAN ALSO BE USED TO SKIP THE NUMBER OF CHARACTERS FOR COMPARISON.
+2. -C OPTION FOR COUNTING NUMBER OF OCCURRENCES OF LINES.
+3. -D TO PRINT ONLY DUPLICATE LINES.
+4. -U TO PRINT ONLY THE UNIQUE LINES WHICH ARE NOT REPEATED.
+5. -S [] TO IGNORE CHARACTERS IN COMPARISON

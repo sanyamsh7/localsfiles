@@ -1,0 +1,3 @@
+this is file 2 with some CAPITAL LETTERS IN IT AND also
+some alphanumeric values like : 1232343sanyam
+and also some special characters: like _____----

@@ -1,0 +1,8 @@
+Programming isn't about what you know
+it's about what you can figure out. - By Chris Pine
+
+The only way to learn a new programming language is
+by writing programs in it. - By Dennis Ritchie
+
+Sometimes it's better to leave something alone, to pause,
+and that's very true of programming. - By Joyce Wheeler

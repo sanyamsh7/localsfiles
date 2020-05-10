@@ -1,0 +1,7 @@
+I am sanyam sharma trying to learn python3 by implementing the command of
+shell in python language. Here i try to open this (grep2) file by calling it in the
+grep3 module and accessing the (grep4)string written in it. NOW SOME CAPITAL  LETTERS.
+JUST TYPING RANDOM WORDS. NOW SOME NUMBERS: 123345668237289038413748761461
+Some special characters: ##########
+NOW SOME ALPHANUMERIC: 123SAMSHARMA34
+dsfasdfadfasd

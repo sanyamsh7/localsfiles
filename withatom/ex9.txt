@@ -1,0 +1,31 @@
+Things To Do:
+1. Implement sed command of UNIX in python.
+2. Research about the sed command.
+    ("sed" in UNIX stands for "stream editor". it can perform alot of functionality on
+    a file find and replace and insertion or deletion. Most common usage is to find and
+    replace strings. With sed we can edit files even without the need of opening them.
+    This command also supports regular expressions.
+3. syntax?
+    --> sed OPTIONS.. [SCRIPTS] [INPUTFILE...]
+    examples: sed 's/unix/linux/' somefile.txt
+           \..> this means s --> for substitution operation
+                           / --> delimiter
+                           and replace unix with linux
+    basically: sed s/string to replace/ string to replace with file_name
+    BY DEFAULT IT SED COMMAND REPLACES THE FIRST OCCURRENCE OF THE WORD IN THE LINE.
+    *) FOR REPLACING THE NTH OCCURRENCE OF THE WORD WE USE:
+        sed 's/unix/linux/2' somefile.txt
+        ---> this replaces the second occurrence of the word unix in file somefile.txt
+    *) TO REPLACE ALL THE OCCURRENCES OF THE WORD WE USE:
+        sed 's/unix/linux/g' somefile.txt
+        ---> g means global replacement
+    *) TO REPLACE FROM NTH OCCURRENCE TO ALL THE OCCURRENCE OF THE WORD:
+        sed 's/unix/linux/3g' somefile.txt
+        ---> this replaces from third occurrence to all the occurrence of the word.
+
+4. Have all the command line options for sed basic usage of replacing one string with another.(done)
+5. Enable regular expression functionality in those command line options.
+6. Make useful functions like sed() and parse_arg()
+7. Implement for the first occurrence of the word.
+8. Implement for the Nth occurrence of the word.
+9. Implement for a range of occurrence of the word.

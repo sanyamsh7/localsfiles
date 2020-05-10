@@ -1,0 +1,5 @@
+Chocolate 50
+Biscuit 35
+Icecream 50
+
+Discount 5

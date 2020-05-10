@@ -1,0 +1,38 @@
+ex 4 Things To Do:
+1. How to use sys.argv
+    import sys module where sys.argv[0] --> name of the script
+2. How to use argparse(done)
+3. Getting help with either --help or -help(done)
+4. Getting any kind of 3 arguments(flags) and doing something using them(done)
+5. What are flag arguments
+  (these are those arguments which does not need any value)
+6. Getting 3 arguments as options(they do take an argument) and sets a
+   variable in the script to that option.(done)
+7. What are terminal wildcards like */.txt.
+      (these are used to find all the files with specified extensions)
+8. Additional positional arguments which are a list of files
+    at the end of all the -style arguments and handle terminal wildcards in
+    point 7.
+9. Figure out the meaning of the point 8.
+10. create a script file(done1)
+11. use sys.argv to take one argument from powershell(done2)
+12. send a response with respect to that argument to check the logic is
+    working as expected.(done3)
+13. Print the name of script itself using sys.argv[0](done)
+14. Using sys.displayhook in my script(dont need this)
+15. What are positional arguments.
+    (these arguments tell the prgrm what to do based on where they appear
+      on the command line.)
+16. What are optional arguments in terminal.
+    (these are those arguments which does not need to be specified, if
+    specified then they perform some task based on the program.)
+17. advantage of argparse over sys.argv
+((((((sys.argv --> method of sys module. it returns a list of all the arguments
+    passed on the command line. sys.argv[0] contains the name of the script itself.
+    Whereas, argparse is the python module for parsing arguments and it also
+    parse sys.argv further for simpler manipulation of the arguments. For complex
+    working with the arguments we require a parser    ))))))
+18. What are the other arguments parser libraries.
+    (only know the name of two: docopt and click, but i am gonna stick to
+    argparse for now.
+    There are 3 standard parser libraries : getopt, optparse and argparse.)

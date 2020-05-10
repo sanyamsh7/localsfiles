@@ -1,0 +1,8 @@
+setup.py
+bin/gothonsfromplanetparcal.py
+example_project.egg-info/PKG-INFO
+example_project.egg-info/SOURCES.txt
+example_project.egg-info/dependency_links.txt
+example_project.egg-info/requires.txt
+example_project.egg-info/top_level.txt
+mine/__init__.py

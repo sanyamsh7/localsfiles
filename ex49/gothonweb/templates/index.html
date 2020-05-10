@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Gothans Of Planet Percal #25</title>
+	</head>
+<body>
+	<form action = "/hello" method="POST">
+	A Greeting: <input type="text" name="greet">
+	<br/>
+	Your Name: <input type="text" name= "name">
+	<br/>
+	<input type="submit">
+	</form>
+	{% if greeting %}
+	   I just wanted to say
+	   <em style="color: green; font-size: 3em;">{{ greeting }}</em>
+	
+	{% else %}
+	   <em>Hello</em>, World!
+	{% endif %}
+</body>
+</html>

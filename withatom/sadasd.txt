@@ -1,0 +1,155 @@
+Things To Do:
+1. How to use sys.argv
+    import sys module where sys.argv[0] --> name of the script
+2. How to use argparse(done)
+3. Getting help with either --help or -help(done)
+4. Getting any kind of 3 arguments(flags) and doing something using them(done)
+5. What are flag arguments
+  (these are those arguments which does not need any value)
+6. Getting 3 arguments as options(they do take an argument) and sets a
+   variable in the script to that option.(done)
+7. What are terminal wildcards like */.txt.
+      (these are used to find all the files with specified extensions)
+8. Additional positional arguments which are a list of files
+    at the end of all the -style arguments and handle terminal wildcards in
+    point 7.
+9. Figure out the meaning of the point 8.
+10. create a script file(done1)
+11. use sys.argv to take one argument from powershell(done2)
+12. send a response with respect to that argument to check the logic is
+    working as expected.(done3)
+13. Print the name of script itself using sys.argv[0](done)
+14. Using sys.displayhook in my script(dont need this)
+15. What are positional arguments.
+    (these arguments tell the prgrm what to do based on where they appear
+      on the command line.)
+16. What are optional arguments in terminal.
+    (these are those arguments which does not need to be specified, if
+    specified then they perform some task based on the program.)
+17. advantage of argparse over sys.argv
+((((((sys.argv --> method of sys module. it returns a list of all the arguments
+    passed on the command line. sys.argv[0] contains the name of the script itself.
+    Whereas, argparse is the python module for parsing arguments and it also
+    parse sys.argv further for simpler manipulation of the arguments. For complex
+    working with the arguments we require a parser    ))))))
+18. What are the other arguments parser libraries.
+    (only know the name of two: docopt and click, but i am gonna stick to
+    argparse for now.
+    There are 3 standard parser libraries : getopt, optparse and argparse.)
+Things To Do:
+1.Understand the cat command and its features.
+    Syntax:
+    Get-Content( it is same as cat cmd)
+    [-Path] <string[]> [-Credential <PSCredential>]
+    [-Exclude <string[]>] [-Filter <string>] [-Force] [-Include <string[]>]
+    [-ReadCount <Int64>] [-TotalCount <Int64>] [-UseTransaction]
+    [<CommonParameters>]
+==> [-Path] <string[]> this will have the name of the string.
+==> [-Credential <PSCredential>] this is for specifying the user or administrator
+    by-default it is the current user
+==> [-Exclude <string[]>] it basically excludes the specified file or element
+    from the path or files specified.
+==> [-Filter <string>]
+        Specifies a filter in the provider's format or language. The value of this parameter qualifies the Path paramet
+        er. The syntax of the filter, including the use of wildcards, depends on the provider. Filters are more efficie
+        nt than other parameters, because the provider applies them when retrieving the objects, rather than having Win
+        dows PowerShell filter the objects after they are retrieved.
+
+    -Force [<SwitchParameter>]
+        Overrides restrictions that prevent the command from succeeding, just so the changes do not compromise security
+        . For example, Force will override the read-only attribute or create directories to complete a file path, but i
+        t will not attempt to change file permissions.
+
+    -Include <string[]>
+        Retrieves only the specified items. The value of this parameter qualifies the Path parameter. Enter a path elem
+        ent or pattern, such as "*.txt". Wildcards are permitted.
+
+    -LiteralPath <string[]>
+        Specifies the path to an item. Unlike Path, the value of LiteralPath is used exactly as it is typed. No charact
+        ers are interpreted as wildcards. If the path includes escape characters, enclose it in single quotation marks.
+         Single quotation marks tell Windows PowerShell not to interpret any characters as escape sequences.
+
+    -Path <string[]>
+        Specifies the path to an item. Get-Content retrieves the content of the item. Wildcards are permitted. The para
+        meter name ("Path" or "FilePath") is optional.
+
+    -ReadCount <Int64>
+        Specifies how many lines of content are sent through the pipeline at a time. The default value is 1. A value of
+         0 (zero) sends all of the content at one time.
+
+        This parameter does not change the content displayed, but it does affect the time it takes to display the conte
+        nt. As the value of ReadCount increases, the time it takes to return the first line increases, but the total ti
+        me for the operation decreases. This can make a perceptible difference in very large items.
+
+    -TotalCount <Int64>
+        Specifies how many lines of content are retrieved. The default is -1 (all lines).
+
+    -UseTransaction [<SwitchParameter>]
+        Includes the command in the active transaction. This parameter is valid only when a transaction is in progress.
+         For more information, see about_Transactions.
+
+    <CommonParameters>
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer and OutVariable. For more information, type,
+        "get-help about_commonparameters".
+
+  (((((i am ignoring the above cat command for powershell because it works
+        differently in windows. now following the cat cmd of unix shell)))))
+2. Overwritting a file with single caret >.
+3. Add text to the end of the file using double carets >>.
+4.exit statuses are :
+      0 , if all the input files were output successfully.
+      >0 , if an error occurred.
+5. A flag to suppress the error messages if a file doesnot exist(flag -q)
+6. using (cat >>filename) command to take input from the user and
+    add it at the end of the filename.
+7. flag -b which omits the line numbers from the blank lines when specified
+  with -n flag.(done)
+8. -e flag displays a $ sign at the end of each line when specified with -v flag.
+9. -n flag displays lines preceded by the line numbers(starting from 1.).(done)
+10. reading a file with content and printing it.(done)
+11. figuring out how files are read in python.(done)
+12. figuring out how each word of a file is printed.(done)
+13. Writing some content to the file.
+14. creating a file.(done)
+16. reading each line of a file and printing it.
+15. completing the entire task.
+Things To Do:
+1. How to use sys.argv
+    import sys module where sys.argv[0] --> name of the script
+2. How to use argparse(done)
+3. Getting help with either --help or -help(done)
+4. Getting any kind of 3 arguments(flags) and doing something using them(done)
+5. What are flag arguments
+  (these are those arguments which does not need any value)
+6. Getting 3 arguments as options(they do take an argument) and sets a
+   variable in the script to that option.(done)
+7. What are terminal wildcards like */.txt.
+      (these are used to find all the files with specified extensions)
+8. Additional positional arguments which are a list of files
+    at the end of all the -style arguments and handle terminal wildcards in
+    point 7.
+9. Figure out the meaning of the point 8.
+10. create a script file(done1)
+11. use sys.argv to take one argument from powershell(done2)
+12. send a response with respect to that argument to check the logic is
+    working as expected.(done3)
+13. Print the name of script itself using sys.argv[0](done)
+14. Using sys.displayhook in my script(dont need this)
+15. What are positional arguments.
+    (these arguments tell the prgrm what to do based on where they appear
+      on the command line.)
+16. What are optional arguments in terminal.
+    (these are those arguments which does not need to be specified, if
+    specified then they perform some task based on the program.)
+17. advantage of argparse over sys.argv
+((((((sys.argv --> method of sys module. it returns a list of all the arguments
+    passed on the command line. sys.argv[0] contains the name of the script itself.
+    Whereas, argparse is the python module for parsing arguments and it also
+    parse sys.argv further for simpler manipulation of the arguments. For complex
+    working with the arguments we require a parser    ))))))
+18. What are the other arguments parser libraries.
+    (only know the name of two: docopt and click, but i am gonna stick to
+    argparse for now.
+    There are 3 standard parser libraries : getopt, optparse and argparse.)
