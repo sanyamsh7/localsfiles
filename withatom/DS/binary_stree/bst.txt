@@ -1,0 +1,43 @@
+////study of binary search trees//////
+
+The main usage for a BSTree is to use a tree to organize pairs of key=value
+nodes in order ahead of time, as you insert or delete them.
+A BSTree does this by starting the tree at a root key=value,
+and having a right or left path (link).
+If you insert a new key=value, then the BSTree’s job is to start at the root
+and compare the key to each node: going left if your new key is less-than
+and going right if your key is greater-than-equal.
+All operations after that do the same thing by comparing any keys to each node,
+moving left and right until it either finds the node or reaches a dead end.
+The basic BSTreeNode would need left, right, key, and value attributes to
+create the tree structure.
+You may also need a parent attribute depending on how you do this.
+BSTree then needs the following operations on a root BSTreeNode:
+
+get
+Given a key, walk the tree to find the node, or return None if you reach a
+dead end. You go left if the given key is less-than the node’s key. You go
+right if the key is greater-than the node’s key. If you read a node with no left
+or right, then you’re done and the node does not exist. There is a way to do
+this using recursion and using a while loop.
+
+set
+This is nearly the same as get except once you reach that dead-end node you
+simply attach a new BSTreeNode on the left or right, thus extending the tree
+down one more branch.
+
+delete
+Deleting nodes from a BSTree is a complex operation, so I have a whole section
+just on delete. The short version is you have three conditions: the node is
+a leaf (no children), has one child, or has two children. If it’s a leaf then
+just remove it. If it has one child, then replace it with the child. If it has
+two children, then it gets really complicated so read the section on deleting below.
+
+list
+Walk the tree and print everything out. The important piece to list is that you
+can walk the tree in different ways to produce different output. If you walk
+the left, then the right paths, you get something different than if you
+do the inverse. If you go all the way to the bottom and then print as you come
+up the tree toward root, you get yet another kind of output. You can
+also print the nodes as you go down the tree, from root to the “leaves.”
+Try different styles to see which one does what.
