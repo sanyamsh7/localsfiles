@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 from binary_search_tree import *
 
 def test_BSTree_set():
@@ -33,6 +34,11 @@ def test_list():
     colors.list()
 =======
 <<<<<<< Updated upstream
+=======
+print("sanyam")
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
+=======
 =======
 print("sanyam")
 >>>>>>> Stashed changes
