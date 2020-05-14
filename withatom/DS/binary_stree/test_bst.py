@@ -30,5 +30,3 @@ def test_BSTree_get():
 def test_list():
     colors = test_BSTree_set()
     colors.list()
->>>>>>> Stashed changes
->>>>>>> Stashed changes
