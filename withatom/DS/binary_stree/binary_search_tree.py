@@ -5,6 +5,13 @@ class BSTreeNode(object):
         self.left = left
         self.right = right
 
+    def minimum(self):
+        node = self
+        if node:
+            while node.left:
+                node = node.left
+            return node
+
     def __repr__(self):
         return f"{self.key}={self.value}:<---left({self.left}) --->right({self.right})"
 
@@ -77,3 +84,13 @@ class BSTree(object):
     def list(self, start=""):
         print("\n\n----", start)
         self._list(self.root)
+
+    def delete_node(self, key , node):
+        
+
+    def delete(self, key):
+        node = self.root
+        if node is not None:
+            self.delete_node(key , node)
+        else:
+            return None

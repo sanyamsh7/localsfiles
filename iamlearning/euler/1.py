@@ -1,7 +1,7 @@
 #simple solution
 #going through all the numbers from 1 to target
 ##s = 0
-##for i in range(1, 1000000):
+##for i in range(1, 100000000):
 ##    if i%3==0 or i%5==0:
 ##        s += i
 ##print(s)
@@ -14,6 +14,7 @@
 #for 3 --> 3+6+9... 999 == 3*(1+2+3+4..333)
 #for 5 --> 5+10+15... 995==5(1+2+3...199)
 #eq. becomes 3*(target//3*(target//3 + 1)/2
+
 target = 1000
 def sum_divisible(n):
     p = (target-1)//n   #999//n

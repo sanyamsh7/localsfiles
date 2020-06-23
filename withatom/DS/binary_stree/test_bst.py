@@ -1,7 +1,8 @@
-from binary_search_tree import *
-
+from bst import *
+#from binary_search_tree import *
 def test_BSTree_set():
-    colors = BSTree()
+    #colors = BSTree()
+    colors = Tree()
     colors.set("Cad", "Cad Red")
     assert colors.root.value == "Cad Red"
     colors.set("Cad", "Cadmium Red")
@@ -26,7 +27,31 @@ def test_BSTree_get():
     assert colors.get("Aliz") == "Alizarin Crimson"
     assert colors.get("red") == None
     assert colors.get("blue") == "blueish"
-
+#
 def test_list():
     colors = test_BSTree_set()
     colors.list()
+
+def test_delete():
+    colors = test_BSTree_set()
+    colors.set("Gamb", "New Gamboge")
+    assert colors.get("Gamb") == "New Gamboge"
+    colors.delete("Pthalo")
+    assert colors.get("Pthalo") == None
+    assert colors.get("Gamb") == "New Gamboge"
+    colors.delete("Aliz")
+    assert colors.get("Aliz") == None
+
+    colors = test_BSTree_set()
+    colors.set("Gamb", "New Gamboge")
+    colors.set("Prus", "Prussian Blue")
+    colors.delete("Pthalo")
+    assert colors.get("Gamb") == "New Gamboge"
+    assert colors.get("Prus") == "Prussian Blue"
+    colors.delete("Gamb")
+    assert colors.get("Gamb") == None
+    assert colors.get("Prus")
+    colors.delete("Prus")
+    assert colors.get("Prus") == None
+    colors.delete("Cad")
+    assert colors.root.key == "Aliz"

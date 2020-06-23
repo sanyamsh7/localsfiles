@@ -32,6 +32,10 @@ just on delete. The short version is you have three conditions: the node is
 a leaf (no children), has one child, or has two children. If it’s a leaf then
 just remove it. If it has one child, then replace it with the child. If it has
 two children, then it gets really complicated so read the section on deleting below.
+Nodes with two children are harder to delete. A node's in-order successor is its
+right subtree's left-most child, and a node's in-order predecessor is the left
+subtree's right-most child. In either case, this node will have only one or no child
+at all. Delete it according to one of the two simpler cases above.
 
 list
 Walk the tree and print everything out. The important piece to list is that you
