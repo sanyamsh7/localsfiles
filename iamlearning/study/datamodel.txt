@@ -1,0 +1,13 @@
+1. data in python is represented by objects or by relations between objects.
+2. every object has 3 things: 
+	an identity 
+	a type 
+	a value 
+3. an object's identity (or address in memory ) never changes.( method id(x) gives the address where the (x ) is stored.
+4. an object's type is also unchangeable.(once the object is defined),
+5. value of some objects can change(mutable and immutable objects)
+6. an object's mutability is determined by its type.
+7. Objects are never explicitly destroyed; however, when they become unreachable they may be garbage-collected
+8. should always close files explicitly
+9. It is understood that these resources are freed when the object is garbage-collected, but since garbage collection is not guaranteed to happen, such objects also provide an explicit way to release the external resource, usually a close() method (or use with statement)
+10. 

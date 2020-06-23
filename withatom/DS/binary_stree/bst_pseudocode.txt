@@ -23,7 +23,7 @@ make class BSTree:
 
       method set( key ,value):
           if root == None:
-            root = BSTreeNode
+            root = BSTreeNode     
           else:
             node = self.root
             while node is not None:
@@ -81,7 +81,7 @@ make class BSTree:
         3. node has two child
         #A node's in-order successor is its
         #right subtree's left-most child
-        
+
           if key smaller than node key:
             recurse delete_node(node.left, key)
           elif key greater than node key:

@@ -1,0 +1,8 @@
+nuts = input("Nuts: ")
+bolts = input("Bolts: ")
+nuts = list(nuts)
+bolts = list(bolts)
+nuts.sort()
+bolts.sort()
+print("".join(nuts))
+print("".join(bolts))
