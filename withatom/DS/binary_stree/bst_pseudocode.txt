@@ -1,0 +1,115 @@
+make class BSTreeNode:
+    initialize attributes:
+    #attributes to create a tree structure
+    #left and right will stay None to create a newNode
+        key
+        value
+        left
+        right
+
+    method minimum(self):
+      node = self
+      while node.left:
+        node = node.left
+      return node
+
+    method replace_child(self, child):
+      pass
+
+
+make class BSTree:
+      initialize:
+        root
+
+      method set( key ,value):
+          if root == None:
+            root = BSTreeNode     
+          else:
+            node = self.root
+            while node is not None:
+              #if similar key found replace
+              if node.key is key:
+                  node value = value
+                  break loop
+
+              elif node left is None and node right is None:
+                  if key smaller than node key:
+                    node left becomes BSTreeNode(key value)
+                  else:
+                    node right is BSTreeNode( key value)
+              else:
+                  if key < node key:
+                      node is left of node
+                  else:
+                      node is right of node
+
+      method get( key , parent):
+          if not self.root:
+              return None
+          node = self.root
+          loop till node is not None:
+              if node.key == key:
+                  return node.value
+              elif left == None and right == None:
+                  return None
+              elif key < node key:
+                  node = node.left
+              elif key >= node key:
+                  node = node.right
+
+      method _list( node):
+      #output defers based on the interpretation
+      #here using root to leaves
+        walk down the tree to print everything
+          till the dead-end.
+
+          if node:
+            print(node.key)
+            if node left:
+              self.list(node.left)
+            if node.right:
+              self.list(node.right)
+
+      method list(self):
+        self._list(self.root)
+
+
+      method delete_node(node, key):
+      #three conditions exists:
+        1. node is leaf node
+        2. node has one child
+        3. node has two child
+        #A node's in-order successor is its
+        #right subtree's left-most child
+
+          if key smaller than node key:
+            recurse delete_node(node.left, key)
+          elif key greater than node key:
+            recurse delete_node(node.right, key)
+          else:
+            if both left and right exists:
+              minimum has node.minimum()
+              node key becomes minimum.key
+              self.delete_node(minimum, minimum.key)
+
+            #when only right child exists
+            elif node right exists:
+              if node is root:
+                root becomes right of node
+              else:
+                node.replace_child(node.right)
+
+            #when only left child exists
+            elif node left exists:
+              if node is root:
+                root becomes left of node
+              else:
+                node.replace_child(node.left)
+
+            else:
+              if node is root:
+                root is None
+
+      method delete(node):
+        if self.root:
+          self.delete_node(self.root, key)

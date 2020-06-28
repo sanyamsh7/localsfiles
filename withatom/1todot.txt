@@ -1,7 +1,0 @@
-Things To Do Today:
-1. implement stack.py(done)
-2. do 90 degree rotation of image ques.(done WITH USING EXTRA SPACE.)
-      IMPLEMENT TRANSPOSE OF MATRIX(done)
-    (done with the entire thing without using any extra space also)
-3. do removal of first occurrence of number in an array.(NOT DONE)
-4. implement queue.py if stack.py is done.(done)
