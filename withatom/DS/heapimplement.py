@@ -74,12 +74,23 @@ def heap_increase_key(A, i, key):
         A[i], A[parent(i)] = A[parent(i)], A[i]
         i = parent(i)
 
+def max_heap_insert(A, key):
+    """ A is modified to include the given key"""
+    A.append(0) # increase heap size
+    print(len(A))
+    heap_increase_key(A, len(A) -1, key)
 
+def heap_extract_max(A):
+    """build heap before extracting max"""
+    max = A[0]
+    A[0] = A[len(A)-1]
+    A.pop()
+    max_heapify(A, 0, len(A))
+    return max
 
 array = [23, 5, 56, 23 , 7 ,8, 9, 3, 9]
-# print("sorted output",heap_sort(array))
+print("sorted output",heap_sort(array))
 build_max_heap(array)
 print(array)
-heap_increase_key(array,4, 100)
+print(heap_extract_max(array))
 print(array)
-print("sorted output",heap_sort(array))
