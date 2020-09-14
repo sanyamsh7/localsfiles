@@ -44,25 +44,24 @@ class Manager(Employee):
         for emp in self.employees:
             print("-->", emp.fullname())
 
-    
+
 dev_1 = Developer("Sanyam", "Sharma", 50000, "python")
 dev_2 = Developer("Test", "Employee", 60000, "java")
 
-#print(help(Developer))
-##print(dev_1.email)
-##print(dev_2.email)
+print(help(Developer)) #gives mrd
+print(dev_1.email)
+print(dev_2.email)
 
-##print(dev_1.pay)
-##dev_1.apply_raise()
-##print(dev_1.pay)
-##
-##print(dev_1.email)
-##print(dev_1.prog_lang)
+print(dev_1.pay)
+dev_1.apply_raise()
+print(dev_1.pay)
+
+print(dev_1.email)
+print(dev_1.prog_lang)
 
 mgr_1 = Manager("Sue", "Smith", 90000, [dev_1])
 
-##print(mgr_1.email)
-##mgr_1.add_emp(dev_2)
-##mgr_1.remove_emp(dev_1)
-##mgr_1.print_emps()
-
+print(mgr_1.email)
+mgr_1.add_emp(dev_2)
+mgr_1.remove_emp(dev_1)
+mgr_1.print_emps()

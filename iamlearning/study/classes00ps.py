@@ -11,8 +11,8 @@ class Employee:
 
     @classmethod
     #in these we receive the class as the first argument
-    #instead of instance self in it
-    #these are accessed only via class
+    #instead of instance (self) in it
+    #these are accessed only via class(cls)
     def set_raise(cls, amount):
         cls.raise_amount = amount
 
@@ -34,7 +34,7 @@ class Employee:
 ##        if day.weekday() == 5 or day.weekday() == 6:
 ##            return False
 ##        return True
-    
+
 emp1 = Employee("sanyam", "sharma", 50000)
 emp2 = Employee("test", "user", 60000)
 string = "sanyam-sharma-50000"
